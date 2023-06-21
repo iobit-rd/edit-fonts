@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import util from 'util'
 
 import * as fontkit from 'fontkit'
 import { Glob } from 'glob'
@@ -22,9 +23,17 @@ function trimFontFileName (filepath) {
 }
 
 const g = new Glob('fonts/*.{ttf,otf}', { nodir: true })
-for (const file of g) {
-    const newpath = trimFontFileName(file)
+const fontsInfo = {}
+for (const filepath of g) {
+
+    const newpath = trimFontFileName(filepath)
     if (newpath) {
-        console.log(path.basename(file), '->', path.basename(newpath))
+        console.log(path.basename(filepath), '->', path.basename(newpath))
     }
+
+    const fontpath = newpath || filepath
+    const font = fontkit.openSync(newpath || filepath)
+    fontsInfo[font.fullName] = path.basename(fontpath)
 }
+
+fs.writeFileSync('edit-fonts.js', `export const fonts = ${util.inspect(fontsInfo)}`)
