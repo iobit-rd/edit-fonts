@@ -24,6 +24,7 @@ function trimFontFileName (filepath) {
 
 const g = new Glob('fonts/*.{ttf,otf}', { nodir: true })
 const fontsInfo = {}
+let familyNameArr = []
 for (const filepath of g) {
 
     const newpath = trimFontFileName(filepath)
@@ -33,7 +34,33 @@ for (const filepath of g) {
 
     const fontpath = newpath || filepath
     const font = fontkit.openSync(newpath || filepath)
-    fontsInfo[font.fullName] = path.basename(fontpath)
+    fontsInfo[`${font.familyName} ${font.subfamilyName }`] = path.basename(fontpath)
+    familyNameArr.unshift(font.familyName)
+}
+familyNameArr = [...new Set(familyNameArr)]
+
+/** 将只有一个字体文件的字体设置为常规字体 */
+const keys = Object.keys(fontsInfo)
+for(let i = 0; i < familyNameArr.length; i++){
+    let contains = 0
+    keys.forEach((fname)=>{
+        if(fname.includes(familyNameArr[i])){
+            contains = contains + 1
+        }
+    })
+    if(contains === 1){
+        let deskey = ''
+        for(let j = 0; j < keys.length; j++){
+            if(keys[j].includes(familyNameArr[i])){
+                deskey = keys[j]
+                break
+            }
+        }
+        const value = fontsInfo[deskey]
+        delete fontsInfo[deskey]
+        fontsInfo[`${familyNameArr[i]} Regular`] = value
+    }    
 }
 
 fs.writeFileSync('edit-fonts.js', `export const fonts = ${util.inspect(fontsInfo)}`)
+fs.writeFileSync('edit-fontNames.js', `${util.inspect(familyNameArr)}`)
