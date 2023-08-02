@@ -3,6 +3,8 @@ export const fonts = {
   'Ubuntu Italic': 'Ubuntu-Italic.ttf',
   'Ubuntu Bold Italic': 'Ubuntu-BoldItalic.ttf',
   'Ubuntu Bold': 'Ubuntu-Bold.ttf',
+  'Tahoma Regular': 'Tahoma.TTF',
+  'Tahoma Bold': 'Tahoma-Bold.TTF',
   'Roboto Regular': 'Roboto-Regular.ttf',
   'Roboto Italic': 'Roboto-Italic.ttf',
   'Roboto Bold Italic': 'Roboto-BoldItalic.ttf',

@@ -40,6 +40,7 @@
   'Oswald',
   'Poppins',
   'Roboto',
+  'Tahoma',
   'Ubuntu',
   'Unicode BMP Fallback SIL',
   'Varela',
