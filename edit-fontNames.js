@@ -5,7 +5,6 @@
   'Belanosima',
   'Belanosima SemiBold',
   'Berlin Sans FB Demi',
-  'Bodoni',
   'Bodoni Moda',
   'Cabin',
   'Carter One',
