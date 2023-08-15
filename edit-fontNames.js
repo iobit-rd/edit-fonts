@@ -15,7 +15,6 @@
   'Dancing Script',
   'Fraunces 72pt',
   'Galada',
-  'HelveticaNeueLT Pro 55 Roman',
   'HelveticaRounded LT Std Bd',
   'Josefin Sans',
   'Lato',
