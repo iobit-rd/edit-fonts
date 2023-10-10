@@ -1,4 +1,4 @@
-[
+export const fonts = [
   'Anton',
   'Barlow Condensed',
   'Bebas Neue',
@@ -44,7 +44,6 @@
   'Roboto',
   'Tahoma',
   'Ubuntu',
-  'Unicode BMP Fallback SIL',
   'Varela',
   'Yeseva One',
   'Zen Kaku Gothic New',

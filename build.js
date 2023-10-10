@@ -62,5 +62,9 @@ for(let i = 0; i < familyNameArr.length; i++){
     }    
 }
 
+const fontArr = familyNameArr.filter((value)=>{
+    return !/Unicode BMP/i.test(value)
+})
+
 fs.writeFileSync('edit-fonts.js', `export const fonts = ${util.inspect(fontsInfo)}`)
-fs.writeFileSync('edit-fontNames.js', `${util.inspect(familyNameArr)}`)
+fs.writeFileSync('edit-fontNames.js', `export const fonts = ${util.inspect(fontArr)}`)
