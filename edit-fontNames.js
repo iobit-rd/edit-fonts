@@ -40,6 +40,7 @@
   'Orbitron',
   'Oswald',
   'Poppins',
+  'Potta One',
   'Roboto',
   'Tahoma',
   'Ubuntu',
