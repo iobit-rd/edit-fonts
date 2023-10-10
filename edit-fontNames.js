@@ -45,5 +45,7 @@
   'Ubuntu',
   'Unicode BMP Fallback SIL',
   'Varela',
-  'Yeseva One'
+  'Yeseva One',
+  'Zen Kaku Gothic New',
+  'Zen Old Mincho'
 ]

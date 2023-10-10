@@ -1,4 +1,8 @@
 export const fonts = {
+  'Zen Old Mincho Regular': 'ZenOldMincho-Regular.ttf',
+  'Zen Old Mincho Bold': 'ZenOldMincho-Bold.ttf',
+  'Zen Kaku Gothic New Regular': 'ZenKakuGothicNew-Regular.ttf',
+  'Zen Kaku Gothic New Bold': 'ZenKakuGothicNew-Bold.ttf',
   'Ubuntu Regular': 'Ubuntu-Regular.ttf',
   'Ubuntu Italic': 'Ubuntu-Italic.ttf',
   'Ubuntu Bold Italic': 'Ubuntu-BoldItalic.ttf',
