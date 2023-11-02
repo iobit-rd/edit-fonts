@@ -19,6 +19,7 @@ export const fonts = [
   'Josefin Sans',
   'Lato',
   'League Spartan',
+  'Leckerli One',
   'Lexend',
   'Lexend Deca',
   'Libre Baskerville',

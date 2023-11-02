@@ -101,6 +101,7 @@ export const fonts = {
   'Damion Regular': 'Damion.ttf',
   'Galada Regular': 'Galada-Regular.ttf',
   'HelveticaRounded LT Std Bd Regular': 'HelveticaRoundedLTStd-Bd.otf',
+  'Leckerli One Regular': 'LeckerliOne-Regular.ttf',
   'Lobster Regular': 'Lobster-Regular.ttf',
   'Noto Sans Mongolian Regular': 'NotoSansMongolian-Regular.ttf',
   'Potta One Regular': 'PottaOne-Regular.ttf',
