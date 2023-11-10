@@ -105,6 +105,7 @@ export const fonts = {
   'Lobster Regular': 'Lobster-Regular.ttf',
   'Noto Sans Mongolian Regular': 'NotoSansMongolian-Regular.ttf',
   'Potta One Regular': 'PottaOne-Regular.ttf',
+  'Rubik Regular': 'Rubik-Regular.ttf',
   'Unicode BMP Fallback SIL Regular': 'UnicodeBMPFallbackSIL.ttf',
   'Varela Regular': 'Varela.ttf',
   'Yeseva One Regular': 'YesevaOne-Regular.ttf'

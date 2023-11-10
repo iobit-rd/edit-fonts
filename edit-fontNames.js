@@ -43,6 +43,7 @@ export const fonts = [
   'Poppins',
   'Potta One',
   'Roboto',
+  'Rubik',
   'Tahoma',
   'Ubuntu',
   'Varela',
