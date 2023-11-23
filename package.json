@@ -4,7 +4,8 @@
   "main": "build.js",
   "type": "module",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "build:images": "node fonts-image.js"
   },
   "repository": "http://192.168.1.81/pkmr/edit-fonts.git",
   "author": "Hanlin <onion7878@gmail.com>",
@@ -12,5 +13,9 @@
   "devDependencies": {
     "fontkit": "^2.0.2",
     "glob": "^10.2.7"
+  },
+  "dependencies": {
+    "node-font2base64": "^0.9.2",
+    "node-html-to-image": "^4.0.0"
   }
 }
