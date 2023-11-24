@@ -10,13 +10,19 @@ const html = `
         font-family: 'thisFont';
         src: url("{{{_fontData}}}");
       }
-      span {
+      div {
         font-family: 'thisFont';
-        font-size: 13px
+        font-size: 13px;
+        display: inline-block;
+        line-height: 30px;
+        text-align: center;
+        height: 30px;
       }
     </style>
   </head>  
-  <span>{{{_content}}}</span>
+  <div>
+    {{{_content}}}
+  </div>
 </html>
 `
 const regularFonts = Object.fromEntries(
@@ -26,6 +32,9 @@ const regularFonts = Object.fromEntries(
 
 const contentArray = Object.entries(regularFonts)
   .map(([name, path]) => {
+    if (path === 'UnicodeBMPFallbackSIL.ttf') {
+      return {}
+    }
     return {
       _fontData: font2base64.encodeToDataUrlSync('./fonts/' + path),
       _content: name.replace(' Regular', ''),
@@ -36,7 +45,7 @@ const contentArray = Object.entries(regularFonts)
 nodeHtmlToImage({
   output: './image.png',
   transparent: true,
-  selector: 'span',
+  selector: 'div',
   html,
   content: contentArray
 })
