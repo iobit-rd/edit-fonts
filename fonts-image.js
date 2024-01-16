@@ -12,11 +12,11 @@ const html = `
       }
       div {
         font-family: 'thisFont';
-        font-size: 13px;
+        font-size: 26px;
         display: inline-block;
-        line-height: 30px;
+        line-height: 60px;
         text-align: center;
-        height: 30px;
+        height: 60px;
       }
     </style>
   </head>  
