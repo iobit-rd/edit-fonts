@@ -42,12 +42,14 @@ export const fonts = [
   'Oswald',
   'Poppins',
   'Potta One',
+  'Pridi',
   'Roboto',
   'Rubik',
   'Tahoma',
   'Ubuntu',
   'Varela',
   'Yeseva One',
+  'Yesteryear',
   'Zen Kaku Gothic New',
   'Zen Old Mincho'
 ]

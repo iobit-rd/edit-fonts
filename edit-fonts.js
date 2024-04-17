@@ -13,6 +13,8 @@ export const fonts = {
   'Roboto Italic': 'Roboto-Italic.ttf',
   'Roboto Bold Italic': 'Roboto-BoldItalic.ttf',
   'Roboto Bold': 'Roboto-Bold.ttf',
+  'Pridi Regular': 'Pridi-Regular.ttf',
+  'Pridi Bold': 'Pridi-Bold.ttf',
   'Poppins Regular': 'Poppins-Regular.ttf',
   'Poppins Italic': 'Poppins-Italic.ttf',
   'Poppins Bold Italic': 'Poppins-BoldItalic.ttf',
@@ -108,5 +110,6 @@ export const fonts = {
   'Rubik Regular': 'Rubik-Regular.ttf',
   'Unicode BMP Fallback SIL Regular': 'UnicodeBMPFallbackSIL.ttf',
   'Varela Regular': 'Varela.ttf',
-  'Yeseva One Regular': 'YesevaOne-Regular.ttf'
+  'Yeseva One Regular': 'YesevaOne-Regular.ttf',
+  'Yesteryear Regular': 'Yesteryear-Regular.ttf'
 }
