@@ -105,6 +105,7 @@ export const fonts = {
   'HelveticaRounded LT Std Bd Regular': 'HelveticaRoundedLTStd-Bd.otf',
   'Leckerli One Regular': 'LeckerliOne-Regular.ttf',
   'Lobster Regular': 'Lobster-Regular.ttf',
+  'Monoton Regular': 'Monoton-Regular.ttf',
   'Noto Sans Mongolian Regular': 'NotoSansMongolian-Regular.ttf',
   'Potta One Regular': 'PottaOne-Regular.ttf',
   'Rubik Regular': 'Rubik-Regular.ttf',

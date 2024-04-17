@@ -24,6 +24,7 @@ export const fonts = [
   'Lexend Deca',
   'Libre Baskerville',
   'Lobster',
+  'Monoton',
   'Noto Sans',
   'Noto Sans Devanagari',
   'Noto Sans Display',
