@@ -20,8 +20,8 @@ async function uploadFile (filepath) {
 }
 
 
-const g = new Glob('fonts-images/*.png', { nodir: true })
+const g = new Glob(['fonts/*.{ttf,otf}', 'fonts-images/*.png'], { nodir: true })
 for (const filepath of g) {
-    console.log("🚀 ~ file: upload.js:36 ~ filepath:", filepath)
+    console.log("🚀 ~ filepath:", filepath)
     await uploadFile(filepath)
 }
