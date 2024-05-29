@@ -35,6 +35,11 @@ const contentArray = Object.entries(regularFonts)
     if (path === 'UnicodeBMPFallbackSIL.ttf') {
       return {}
     }
+
+    if (path.startsWith('NotoEmoji')) {
+      return {}
+    }
+
     return {
       _fontData: font2base64.encodeToDataUrlSync('./fonts/' + path),
       _content: name.replace(' Regular', ''),
