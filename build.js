@@ -34,24 +34,24 @@ for (const filepath of g) {
 
     const fontpath = newpath || filepath
     const font = fontkit.openSync(newpath || filepath)
-    fontsInfo[`${font.familyName} ${font.subfamilyName }`] = path.basename(fontpath)
+    fontsInfo[`${font.familyName} ${font.subfamilyName}`] = path.basename(fontpath)
     familyNameArr.unshift(font.familyName)
 }
 familyNameArr = [...new Set(familyNameArr)]
 
 /** 将只有一个字体文件的字体设置为常规字体 */
 const keys = Object.keys(fontsInfo)
-for(let i = 0; i < familyNameArr.length; i++){
+for (let i = 0; i < familyNameArr.length; i++) {
     let contains = 0
-    keys.forEach((fname)=>{
-        if(fname.includes(familyNameArr[i])){
+    keys.forEach((fname) => {
+        if (fname.includes(familyNameArr[i])) {
             contains = contains + 1
         }
     })
-    if(contains === 1){
+    if (contains === 1) {
         let deskey = ''
-        for(let j = 0; j < keys.length; j++){
-            if(keys[j].includes(familyNameArr[i])){
+        for (let j = 0; j < keys.length; j++) {
+            if (keys[j].includes(familyNameArr[i])) {
                 deskey = keys[j]
                 break
             }
@@ -59,11 +59,16 @@ for(let i = 0; i < familyNameArr.length; i++){
         const value = fontsInfo[deskey]
         delete fontsInfo[deskey]
         fontsInfo[`${familyNameArr[i]} Regular`] = value
-    }    
+    }
 }
 
-const fontArr = familyNameArr.filter((value)=>{
-    return !/Unicode BMP/i.test(value)
+const fontArr = familyNameArr.filter((value) => {
+    if (value.startsWith('Unicode BMP')) {
+        return false
+    } else if (value.startsWith('Noto Emoji')) {
+        return false
+    }
+    return true
 })
 
 fs.writeFileSync('edit-fonts.js', `export const fonts = ${util.inspect(fontsInfo)}`)
