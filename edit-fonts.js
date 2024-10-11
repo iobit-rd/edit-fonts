@@ -55,6 +55,8 @@ export const fonts = {
   'Noto Sans Italic': 'NotoSans-Italic.ttf',
   'Noto Sans Bold Italic': 'NotoSans-BoldItalic.ttf',
   'Noto Sans Bold': 'NotoSans-Bold.ttf',
+  'Noto Kufi Arabic Regular': 'NotoKufiArabic-Regular.ttf',
+  'Noto Kufi Arabic Bold': 'NotoKufiArabic-Bold.ttf',
   'Noto Emoji Regular': 'NotoEmoji-Regular.ttf',
   'Noto Emoji Bold': 'NotoEmoji-Bold.ttf',
   'Libre Baskerville Regular': 'LibreBaskerville-Regular.ttf',

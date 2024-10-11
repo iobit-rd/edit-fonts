@@ -25,6 +25,7 @@ export const fonts = [
   'Libre Baskerville',
   'Lobster',
   'Monoton',
+  'Noto Kufi Arabic',
   'Noto Sans',
   'Noto Sans Devanagari',
   'Noto Sans Display',
