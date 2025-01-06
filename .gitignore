@@ -1,2 +1,4 @@
 node_modules/
 fonts-images/
+.temp/
+ttf2ms-font-object/poi-font-mbender/target
