@@ -29,23 +29,29 @@ if (otfPathList.length > 0) {
   throw new Error("Exists OTF font file, please check them first.");
 }
 
-console.log("🚀 ~ begin converting");
+console.log("🚀 ~ begin converting1")
 
 // 调用java ttf 转 fontdata
-execSync("java -jar convert-ttf2object.jar");
+execSync("java -jar convert-ttf2object.jar")
+
+console.log("🚀 ~ begin converting2")
 
 // 检查 ttf字体个数 和 fontdata 字体个数是否一致
-const ttfPathList = new Glob("fonts/*.ttf", { nodir: true });
-const fontdataPathList = new Glob("font-objects/*.eot", { nodir: true });
+const ttfPathList = new Glob("fonts/*.ttf", { nodir: true })
+const fontdataPathList = new Glob("font-objects/*.eot", { nodir: true })
 if (ttfPathList.length !== fontdataPathList.length) {
-  throw new Error("ttf and fontdata count not equal.");
+  throw new Error("ttf and fontdata count not equal.")
 }
 
-console.log("🚀 ~ begin uploading");
+console.log("🚀 ~ begin uploading")
 
 // 上传文件到服务器
-const uploadPathList = new Glob(["fonts/*.ttf", "fonts-images/*.png", "font-objects/*.eot"], { nodir: true });
+const uploadPathList = new Glob(
+  ["fonts/*.ttf", "fonts-images/*.png", "font-objects/*.eot"],
+  { nodir: true }
+)
 for (const filepath of uploadPathList) {
-  console.log("🚀 ~ filepath:", filepath);
-  await uploadFile(filepath);
+  console.log("🚀 ~ filepath:", filepath)
+  const testda = await uploadFile(filepath)
+  console.log("🚀 ~ testda:", testda.data)
 }
