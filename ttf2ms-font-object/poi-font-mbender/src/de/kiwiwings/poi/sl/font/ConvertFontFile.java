@@ -17,16 +17,22 @@ public class ConvertFontFile {
         FontFactory fontfac = FontFactory.getInstance();
 
         // 遍历目录下font文件夹 获取所有的字体文件
-        File[] files = new File("./fonts").listFiles();
+        File[] files = new File("./fonts").listFiles((dir, filename) -> filename.endsWith(".ttf"));
+
         for (File file : files) {
             if (file.isDirectory()) {
+                continue;
+            }
+
+            String newPath = "./font-objects/" + file.getName().replace(".ttf", ".eot");
+
+            if (new File(newPath).exists()) {
                 continue;
             }
 
             System.out.println("Converting " + file.getName());
             ByteArrayOutputStream bos = new ByteArrayOutputStream(200000);
             FileInputStream fis = new FileInputStream(file.getPath());
-            
 
             Font[] fonts = fontfac.loadFonts(fis);
 
@@ -34,7 +40,6 @@ public class ConvertFontFile {
                 bos.reset();
                 conv.convert(font).copyTo(bos);
 
-                String newPath = "./font-objects/" + file.getName().replace(".ttf", ".eot");
                 FileOutputStream fos = new FileOutputStream(newPath);
                 fos.write(bos.toByteArray());
                 fos.close();
