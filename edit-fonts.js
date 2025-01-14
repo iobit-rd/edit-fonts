@@ -89,8 +89,6 @@ export const fonts = {
   'Cabin Italic': 'Cabin-Italic.ttf',
   'Cabin Bold Italic': 'Cabin-BoldItalic.ttf',
   'Cabin Bold': 'Cabin-Bold.ttf',
-  'Bodoni Moda Regular': 'BodoniModa-Regular.ttf',
-  'Bodoni Moda Italic': 'BodoniModa-Italic.ttf',
   'Belanosima Regular': 'Belanosima-Regular.ttf',
   'Belanosima Bold': 'Belanosima-Bold.ttf',
   'Barlow Condensed Regular': 'BarlowCondensed-Regular.ttf',

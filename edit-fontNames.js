@@ -5,7 +5,6 @@ export const fonts = [
   'Belanosima',
   'Belanosima SemiBold',
   'Berlin Sans FB Demi',
-  'Bodoni Moda',
   'Cabin',
   'Carter One',
   'Chela One',
