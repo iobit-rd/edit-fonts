@@ -1,5 +1,4 @@
 export const fonts = {
-  "Anton Regular": "Anton-Regular.ttf",
   "Bebas Neue Regular": "BebasNeue-Regular.ttf",
   "Belanosima Bold": "Belanosima-Bold.ttf",
   "Belanosima Regular": "Belanosima-Regular.ttf",
@@ -124,4 +123,4 @@ export const fonts = {
   "Zen Kaku Gothic New Regular": "ZenKakuGothicNew-Regular.ttf",
   "Zen Old Mincho Bold": "ZenOldMincho-Bold.ttf",
   "Zen Old Mincho Regular": "ZenOldMincho-Regular.ttf",
-};
+}

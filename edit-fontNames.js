@@ -1,5 +1,4 @@
 export const fonts = [
-  "Anton",
   "Bebas Neue",
   "Belanosima SemiBold",
   "Belanosima",
@@ -55,4 +54,4 @@ export const fonts = [
   "Yesteryear",
   "Zen Kaku Gothic New",
   "Zen Old Mincho",
-];
+]
