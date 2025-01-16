@@ -47,7 +47,12 @@ console.log("🚀 ~ begin uploading")
 
 // 上传文件到服务器
 const uploadPathList = new Glob(
-  ["fonts/*.ttf", "fonts-images/*.png", "font-objects/*.eot"],
+  [
+    "fonts-share/*.ttf",
+    "fonts/*.ttf",
+    "fonts-images/*.png",
+    "font-objects/*.eot",
+  ],
   { nodir: true }
 )
 for (const filepath of uploadPathList) {
