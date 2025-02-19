@@ -1,4 +1,5 @@
 export const fonts = [
+  '851CHIKARA-DZUYOKU-KANA-A',
   'Anton',
   'Barlow Condensed',
   'Bebas Neue',
@@ -13,16 +14,19 @@ export const fonts = [
   'Comic Sans MS',
   'Damion',
   'Dancing Script',
+  'Dela Gothic One',
   'Fraunces 72pt',
   'Galada',
   'HelveticaRounded LT Std Bd',
   'Josefin Sans',
+  'Keifont',
   'Lato',
   'League Spartan',
   'Leckerli One',
   'Lexend',
   'Lexend Deca',
   'Libre Baskerville',
+  'LightNovelPopV2 V2',
   'Lobster',
   'Monoton',
   'Noto Kufi Arabic',
@@ -53,5 +57,6 @@ export const fonts = [
   'Yeseva One',
   'Yesteryear',
   'Zen Kaku Gothic New',
-  'Zen Old Mincho'
+  'Zen Old Mincho',
+  'ZeroGothic'
 ]

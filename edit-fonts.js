@@ -97,6 +97,7 @@ export const fonts = {
   'Barlow Condensed Italic': 'BarlowCondensed-Italic.ttf',
   'Barlow Condensed Bold Italic': 'BarlowCondensed-BoldItalic.ttf',
   'Barlow Condensed Bold': 'BarlowCondensed-Bold.ttf',
+  '851CHIKARA-DZUYOKU-KANA-A Regular': '851CHIKARA-DZUYOKU-KANA-A.ttf',
   'Anton Regular': 'Anton-Regular.ttf',
   'Bebas Neue Regular': 'BebasNeue-Regular.ttf',
   'Belanosima SemiBold Regular': 'Belanosima-SemiBold.ttf',
@@ -105,9 +106,12 @@ export const fonts = {
   'Chela One Regular': 'ChelaOne-Regular.ttf',
   'Chewy Regular': 'Chewy-Regular.ttf',
   'Damion Regular': 'Damion.ttf',
+  'Dela Gothic One Regular': 'DelaGothicOne-Regular.ttf',
   'Galada Regular': 'Galada-Regular.ttf',
   'HelveticaRounded LT Std Bd Regular': 'HelveticaRoundedLTStd-Bd.otf',
+  'Keifont Regular': 'Keifont.ttf',
   'Leckerli One Regular': 'LeckerliOne-Regular.ttf',
+  'LightNovelPopV2 V2 Regular': 'LightNovelPopV2-V2.otf',
   'Lobster Regular': 'Lobster-Regular.ttf',
   'Monoton Regular': 'Monoton-Regular.ttf',
   'Noto Emoji Light Regular': 'NotoEmoji-Light.ttf',
@@ -119,5 +123,6 @@ export const fonts = {
   'Unicode BMP Fallback SIL Regular': 'UnicodeBMPFallbackSIL.ttf',
   'Varela Regular': 'Varela.ttf',
   'Yeseva One Regular': 'YesevaOne-Regular.ttf',
-  'Yesteryear Regular': 'Yesteryear-Regular.ttf'
+  'Yesteryear Regular': 'Yesteryear-Regular.ttf',
+  'ZeroGothic Regular': 'ZeroGothic.otf'
 }
