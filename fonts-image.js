@@ -40,12 +40,34 @@ const contentArray = Object.entries(regularFonts)
       return {}
     }
 
-    return {
-      _fontData: font2base64.encodeToDataUrlSync('./fonts/' + path),
-      _content: name.replace(' Regular', ''),
-      output: 'fonts-images/' + name.replace(' Regular', '.png')
-    }
-  });
+    let content
+    switch (name) {
+      case 'Keifont Regular': 
+          content = 'けいふぉんと！'
+          break;
+      case '851CHIKARA-DZUYOKU-KANA-A Regular':
+          content = 'チカラヅヨク'
+          break;
+      case 'LightNovelPopV2 V2 Regular':
+          content = 'ラノベPOP'
+          break;
+      case 'ZeroGothic Regular':
+          content = '零ゴシック'
+          break;
+      case 'Dela Gothic One Regular':
+          content = 'デラゴシックワン'
+          break;
+      default:
+        content = name.replace(' Regular', '')
+          break;
+  }
+
+  return {
+    _fontData: font2base64.encodeToDataUrlSync('./fonts/' + path),
+    _content: content,
+    output: 'fonts-images/' + name.replace(' Regular', '.png')
+  }
+});
 
 nodeHtmlToImage({
   output: './image.png',
